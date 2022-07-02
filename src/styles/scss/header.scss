@@ -1,0 +1,24 @@
+body {
+	header {
+		position: relative;
+		z-index: 2;
+		.navbar {
+			padding: 0;
+			.nav-item {
+				position: relative;
+			}
+			.nav-item::after {
+				content: "";
+				position: absolute;
+				background-image: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+				width: 0;
+				left: 0;
+				height: 3px;
+				transition: .4s;
+			}
+			.nav-item:hover:after {
+				width: 100%;
+			}
+		}
+	}
+}
