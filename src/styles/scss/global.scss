@@ -1,0 +1,70 @@
+@import './variables.scss';
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+@import './responsive.scss';
+
+body {
+	font-family: $font;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-size: 15px;
+	background-color: $Very-Light-Gray;
+}
+.button-container {
+	position: relative;
+	width: fit-content;
+}
+.my-btn::after {
+	opacity: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 100px;
+	width: 100%;
+	height: 100%;
+	transition: .4s;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.my-btn:hover:after {
+	opacity: 1;
+}
+
+
+.my-btn,
+.my-btn:hover {
+	color: $White;
+}
+.my-btn {
+	display: block;
+    width: 160px;
+	padding: 7px 20px;
+	background-image: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+	border-radius: 100px;
+}
+
+.menu-icon {
+	cursor: pointer;
+	display: none;
+}
+
+a {
+	color: #000;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+p,
+span {
+	color: $Grayish-Blue;
+	font-size: $font-size;
+}
+h2,
+h3 {
+	padding: 25px 0;
+}
+.text-end {
+	text-align: -webkit-right;
+}
