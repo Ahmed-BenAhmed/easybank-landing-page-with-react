@@ -1,0 +1,83 @@
+main {
+	position: relative;
+	section {
+		padding: 50px 0;
+	}
+	.home {
+		.background {
+			.first {
+				position: absolute;
+				z-index: -3;
+				background-image: $first-d-background-src;
+				width: $first-d-background-w;
+				height: $first-d-background-h;
+				right: $first-d-background-r;
+				top: $first-d-background-t;
+			}
+			.second {
+				position: absolute;
+				width: auto;
+				right: $second-d-background-r;
+				top: $second-d-background-t;
+				z-index: 0;
+			}
+		}
+		.introduction {
+			padding: 100px 0;
+			width: 40%;
+			h2 {
+				font-size: 48px;
+			}
+			p {
+				margin: 20px 0;
+			}
+		}
+	}
+	.why-choose-us {
+		background-color: $Light-Grayish-Blue;
+		.s-head {
+			p {
+				width: $d-p-width;
+			}
+		}
+		.s-body {
+			padding-top: 50px;
+		}
+	}
+	.articles {
+		img {
+			width: 100%;
+			height: 200px;
+		}
+		.card {
+			border-radius: 10px;
+			background-color: $White;
+
+			.card-img {
+				img {
+					border-radius: 10px 10px 0 0;
+				}
+			}
+			.card-details {
+				padding: 5px 10px;
+			}
+			.card-author,
+			.card-title,
+			.card-summary {
+				padding: 0 10px;
+			}
+			.card-title {
+				font-size: 18px;
+			}
+			.card-summary {
+				font-size: 14px;
+			}
+			.card-author span {
+				font-size: 12px;
+			}
+			.card-title a:hover {
+				color: $Lime-Green;
+			}
+		}
+	}
+}
